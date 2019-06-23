@@ -33,11 +33,19 @@ class PokemonGameBoard extends Component {
 			<section className="PokemonGameBoard">
 				<section className="PokemonGameBoard-hand">
 					<h1>Computer's Hand</h1>
-					<Pokedex pokemon={computer} totalexp={computerTotal} isWinner={computerTotal > userTotal}/>
+					<Pokedex 
+						pokemon={computer} 
+						totalexp={computerTotal} 
+						isWinner={computerTotal > userTotal}
+					/>
 				</section>
 				<section className="PokemonGameBoard-hand">
 					<h1>Your Hand</h1>
-					<Pokedex pokemon={user} totalexp={userTotal} isWinner={userTotal > computerTotal}/>
+					<Pokedex 
+						pokemon={user} 
+						totalexp={userTotal} 
+						isWinner={userTotal > computerTotal}
+					/>
 				</section>
 			</section>
 		)
